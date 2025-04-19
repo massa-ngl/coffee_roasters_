@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./index.css" />
+
+    <!-- JS Link -->
+    <script src="./index.js" defer></script>
+
+    <title>Home | Coffeeroasters subscription site</title>
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+      <nav class="container nav__section">
+
+        <a href="./index.html">
+          <img src="./assets/shared/desktop/logo.svg" alt="logo" class="nav__section-logo"/>
+        </a>
+
+        <div class="nav__section-menu" id="navMenu">
+          <ul id="myLinks" class="link__lists">
+            <li><a href="./index.html">home</a></li>
+            <li><a href="./about.html">about us</a></li>
+            <li><a href="./plan.html">create your plan</a></li>
+          </ul>
+          
+          <a href="javascript:void(0)" class="icon" id="iconBtn" onclick="myFunction()">&#9776;</a>
+          <!-- <a href="javascript:void(0)" class="close__icon" id="iconBtn" onclick="myFunction()">&times;</a> -->
+        </div>
+
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container hero__section">
+        <!-- hero bg image -->
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="./assets/home/desktop/image-hero-coffeepress.jpg"
+            class="hero-img desktop__bg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/home/tablet/image-hero-coffeepress.jpg"
+            class="hero-img tablet__bg"
+          />
+          <img
+            src="./assets/home/mobile/image-hero-coffeepress.jpg"
+            alt="image-hero-coffeepress.jpg"
+            class="hero-img mobile__bg"
+          />
+        </picture>
+
+        <!-- hero text -->
+        <div class="hero__text">
+          <!-- hero heading h1 -->
+          <h1 class="hero__text-h1">
+            Great coffee <span class="new-line">made simple.</span>
+          </h1>
+
+          <!-- hero body text -->
+          <p class="hero__text-para">
+            Start your mornings with the world’s best coffees. Try our expertly
+            curated artisan coffees from our best roasters delivered directly to
+            your door, at your schedule.
+          </p>
+
+          <!-- call-to-action button -->
+          <a href="./plan.html" class="cta__btn">Create your plan</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLECTION SECTION -->
+    <section class="collection">
+      <div class="container collection__section">
+        <h2 class="collection__section-h2">Our collection</h2>
+
+        <div class="collection__section-details">
+          <div class="collection__type">
+            <img
+              src="./assets/home/desktop/image-gran-espresso.png"
+              alt="gran-espresso"
+              class="collection-details"
+            />
+            <div class="collection__type-text">
+              <h2 class="collection__type-h2 coffee__name">Gran Espresso</h2>
+              <p class="collection__type-para">
+                Light and flavorful blend with cocoa and black pepper for an
+                intense experience
+              </p>
+            </div>
+          </div>
+
+          <div class="collection__type">
+            <img
+              src="./assets//home/desktop/image-planalto.png"
+              alt="planalto"
+              class="collection-details"
+            />
+            <div class="collection__type-text">
+              <h2 class="collection__type-h2 coffee__name">Planalto</h2>
+              <p class="collection__type-para">
+                Brazilian dark roast with rich and velvety body, and hints of
+                fruits and nuts
+              </p>
+            </div>
+          </div>
+
+          <div class="collection__type">
+            <img
+              src="./assets/home/desktop/image-piccollo.png"
+              alt="picollo"
+              class="collection-details"
+            />
+            <div class="collection__type-text">
+              <h2 class="collection__type-h2 coffee__name">Picollo</h2>
+              <p class="collection__type-para">
+                Mild and smooth blend featuring notes of toasted almond and
+                dried cherry
+              </p>
+            </div>
+          </div>
+
+          <div class="collection__type">
+            <img
+              src="./assets/home/desktop/image-danche.png"
+              alt="danche"
+              class="collection-details"
+            />
+            <div class="collection__type-text">
+              <h2 class="collection__type-h2 coffee__name">Danche</h2>
+              <p class="collection__type-para">
+                Ethiopian hand-harvested blend densely packed with vibrant fruit
+                notes
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REASON SECTION -->
+    <section class="reason">
+      <div class="container reason__section">
+        <div class="reason__section-top">
+          <div class="reason__section-toptext">
+            <h2>Why choose us?</h2>
+            <p>
+              A large part of our role is choosing which particular coffees will
+              be featured in our range. This means working closely with the best
+              coffee growers to give you a more impactful experience on every
+              level.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- answer section -->
+      <div class="container answer__section">
+        <div class="answer__section-div">
+          <img src="./assets/home/desktop/icon-coffee-bean.svg" alt="" />
+          <div class="answer__section-text">
+            <h2>Best quality</h2>
+            <p>
+              Discover an endless variety of the world’s best artisan coffee
+              from each of our roasters.
+            </p>
+          </div>
+        </div>
+
+        <div class="answer__section-div">
+          <img src="./assets/home/desktop/icon-gift.svg" alt="" />
+          <div class="answer__section-text">
+            <h2>Exclusive benefits</h2>
+            <p>
+              Special offers and swag when you subscribe, including 30% off your
+              first shipment.
+            </p>
+          </div>
+        </div>
+
+        <div class="answer__section-div">
+          <img
+            src="./assets/home/desktop/icon-truck.svg"
+            alt=""
+            class="icon-truck"
+          />
+          <div class="answer__section-text">
+            <h2>Free shipping</h2>
+            <p>
+              We cover the cost and coffee is delivered fast. Peak freshness:
+              guaranteed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO SECTION -->
+    <section class="info">
+      <div class="container info__section">
+        <div class="info__section-div">
+          <h4>How it works</h4>
+
+          <div class="info__section-line">
+            <div class="circle"></div>
+            <div class="line"></div>
+            <div class="circle"></div>
+            <div class="line"></div>
+            <div class="circle"></div>
+          </div>
+
+          <div class="info__section__content">
+            <div class="info__section__content-div">
+              <h1>01</h1>
+              <h2>Pick your coffee</h2>
+              <p>
+                Select from our evolving range of artisan coffees. Our beans are
+                ethically sourced and we pay fair prices for them. There are new
+                coffees in all profiles every month for you to try out.
+              </p>
+            </div>
+
+            <div class="info__section__content-div">
+              <h1>02</h1>
+              <h2>Choose the frequency</h2>
+              <p>
+                Customize your order frequency, quantity, even your roast style
+                and grind type. Pause, skip or cancel your subscription with no
+                commitment through our online portal.
+              </p>
+            </div>
+
+            <div class="info__section__content-div">
+              <h1>03</h1>
+              <h2>Recieve and enjoy!</h2>
+              <p>
+                We ship your package within 48 hours, freshly roasted. Sit back
+                and enjoy award-winning world-class coffees curated to provide a
+                distinct tasting experience.
+              </p>
+            </div>
+          </div>
+
+          <!-- call-to-action button -->
+          <div class="cta__btn-link">
+            <a href="./plan.html" class="cta__btn">Create your plan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div class="container footer__section">
+        <div class="footer__section-menu">
+          <a href="#">
+            <img
+              src="./assets/shared/desktop/logo-dark.svg"
+              alt="logo"
+              class="footer__section-logo"
+            />
+          </a>
+
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="./about.html">about us</a></li>
+            <li><a href="./plan.html">create your plan</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section-icons">
+          <a href="#"
+            ><img
+              src="./assets/shared/desktop/icon-facebook.svg"
+              alt=""
+              class="footer__icons-img"
+          /></a>
+          <a href="#"
+            ><img
+              src="./assets/shared/desktop/icon-twitter.svg"
+              alt=""
+              class="footer__icons-img"
+          /></a>
+          <a href="#"
+            ><img
+              src="./assets/shared/desktop/icon-instagram.svg"
+              alt=""
+              class="footer__icons-img"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- 
+Home
+  About us
+  Create your plan
+
+  Great coffee made simple.
+
+  Start your mornings with the world’s best coffees. Try our expertly curated artisan 
+  coffees from our best roasters delivered directly to your door, at your schedule.
+
+  Create your plan
+
+  Our collection
+
+  Gran Espresso
+  Light and flavorful blend with cocoa and black pepper for an intense experience
+
+  Planalto
+  Brazilian dark roast with rich and velvety body, and hints of fruits and nuts
+
+  Piccollo
+  Mild and smooth blend featuring notes of toasted almond and dried cherry
+
+  Danche
+  Ethiopian hand-harvested blend densely packed with vibrant fruit notes
+
+  Why choose us?
+
+  A large part of our role is choosing which particular coffees will be featured 
+  in our range. This means working closely with the best coffee growers to give 
+  you a more impactful experience on every level.
+
+  Best quality
+  Discover an endless variety of the world’s best artisan coffee from each of our roasters.
+
+  Exclusive benefits
+  Special offers and swag when you subscribe, including 30% off your first shipment.
+
+  Free shipping 
+  We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.
+
+  How it works
+
+  01
+  Pick your coffee
+  Select from our evolving range of artisan coffees. Our beans are ethically 
+  sourced and we pay fair prices for them. There are new coffees in all profiles 
+  every month for you to try out.
+
+  02
+  Choose the frequency
+  Customize your order frequency, quantity, even your roast style and grind type. 
+  Pause, skip or cancel your subscription with no commitment through our online portal.
+
+  03
+  Receive and enjoy!
+  We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning 
+  world-class coffees curated to provide a distinct tasting experience.
+
+  Create your plan
+
+  Home
+  About us
+  Create your plan
+ -->
