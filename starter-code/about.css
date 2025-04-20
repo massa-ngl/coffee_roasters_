@@ -27,6 +27,7 @@
 
 body {
   font-family: var(--body-font);
+  /* background-color: #000000; */
 }
 
 :root {
@@ -150,22 +151,28 @@ img {
   color: var(--dark-grey-blue-color);
 }
 
+.menu__btn {
+  display: none;
+}
+
 /* HERO SECTION */
 .hero-img {
   border-radius: 12px;
 }
 
 .hero__section {
+  width: 100%;
   position: relative;
   margin-top: 5rem;
   padding: 0;
+  margin-bottom: 6rem;
 }
 
 .hero__text {
   position: absolute;
   top: 50%;
   left: 40%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   text-align: left;
   padding: 12px;
   /* max-width: 100%; */
@@ -174,20 +181,132 @@ img {
 
 .hero__text-h1 {
   font-family: "Fraunces-Black";
-  font-size: 60px;
+  font-size: 40px;
   color: var(--bg-light-cream-color);
   line-height: 50px;
-  margin-bottom: 16px;
+  margin-bottom: 36px;
+  overflow: hidden;
 }
 
 .hero__text-para {
-  width: 40%;
+  width: 70%;
   color: #a1a1a1;
   margin-bottom: 48px;
 }
 
 .new-line {
   display: block;
+}
+
+/* COMMITMENT SECTION */
+.commitment__sec {
+  /* border: 2px solid red; */
+  padding: 0;
+  margin-bottom: 6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  width: 100%;
+}
+
+.commitment__sec-left {
+  padding: 0;
+  border-radius: 12px;
+}
+
+.commitment__sec-right {
+  /* padding: 50% 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.commitment__right-h2,
+.commitment__right-para {
+  color: var(--dark-grey-blue-color);
+}
+
+.commitment__right-h2 {
+  font-family: var(--heading1-font);
+  font-size: 40px;
+  color: var(--dark-grey-blue-color);
+  margin-bottom: 1.2rem;
+}
+
+.commitment__right-para {
+  line-height: 28px;
+}
+
+/* quality section */
+.quality__sec {
+  width: 100%;
+  border: 2px solid red;
+  padding-top: 4rem;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  z-index: -100;
+}
+
+.quality__sec-beneath {
+  border-radius: 12px;
+  width: 100%;
+  color: var(--bg-light-cream-color);
+  z-index: -2;
+}
+
+.quality__sec-content {
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 40px;
+  position: relative;
+  z-index: 3;
+  top: 50%;
+  left: -50%;
+  transform: translate(50%, -107%);
+  padding: 12px 2.5rem;
+}
+
+.quality__text {
+  color: var(--bg-light-cream-color);
+  /* background-color: red; */
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  flex-basis: 70%;
+}
+
+.quality__sec-h2 {
+  margin-bottom: 1.2rem;
+  font-family: var(--heading2-font);
+  font-size: 35px;
+}
+
+.quality__sec-para {
+  line-height: 28px;
+}
+
+.quality__sec-atop{
+  border-radius: 12px;
+  position: relative;
+  z-index: 3;
+  top: 50%;
+  left: -50%;
+  transform: translate(50%, -50%);
+}
+
+/* headquarters section */
+.headquarters__sec{
+  border: 2px solid black;
+  background-color: black;
+  padding: 300px;
+  position: relative;
+  z-index: 100;
+  top: 0%;
+  transform: translateY(-50%);
 }
 
 /* FOOTER SECTION */
@@ -267,7 +386,21 @@ img {
   }
 
   .hero__text-para {
-    width: 60%;
+    width: 85%;
+    font-size: 1.2rem;
+  }
+
+  /* commitment section */
+  .commitment__right-h2 {
+    text-wrap: nowrap;
+    font-size: 2.2rem;
+  }
+
+  /* quality section */
+  .quality__sec-content {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
   }
 
   /* footer section */
@@ -313,6 +446,10 @@ img {
     display: none;
   }
 
+  .menu__btn {
+    display: block;
+  }
+
   /* hero section */
   .hero__text {
     left: 50%;
@@ -327,6 +464,29 @@ img {
 
   .hero__text-para {
     width: 100%;
+  }
+
+  /* commitment section */
+  .commitment__sec {
+    /* border: 2px solid red; */
+    display: block;
+    text-align: center;
+  }
+
+  .commitment__left-img {
+    border-radius: 12px;
+    margin-bottom: 50px;
+  }
+
+  .commitment__right-h2 {
+    font-size: 2rem;
+  }
+
+  /* quality section */
+  .quality__sec-content {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
   }
 
   /* footer section */
