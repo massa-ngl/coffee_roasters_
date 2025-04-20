@@ -151,9 +151,7 @@ img {
   color: var(--dark-grey-blue-color);
 }
 
-.menu__btn,
-.close__btn,
-.icon{
+.menu__btn{
   display: none;
 }
 
@@ -163,6 +161,8 @@ img {
 }
 
 .hero__section {
+  width: 100%;
+  /* border: 2px solid green; */
   position: relative;
   margin-top: 5rem;
   padding: 0;
@@ -632,7 +632,6 @@ img {
     display: block;
   }
   
-  
   .nav__section-menu .icon{
     color: var(--dark-grey-blue-color);
     font-weight: 600;
@@ -646,13 +645,10 @@ img {
   }
 
   .menu__btn{
-    width: 8%;
     display: block;
+    cursor: pointer;
   }
 
-  .close__btn{
-    width: 12%;
-  }
 
   /* hero section */
   .hero__text {
