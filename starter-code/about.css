@@ -438,7 +438,7 @@ img {
     left: 0;
     width: 100vw;
     transition: 0.8s;
-    /* overflow: hidden; */
+    overflow: hidden;
     z-index: 200;
   }
 
