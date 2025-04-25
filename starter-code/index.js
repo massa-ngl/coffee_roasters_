@@ -1,6 +1,6 @@
-menuButton=document.querySelector("#menuIcon");
+let menuButton=document.querySelector("#menuIcon");
 
 menuButton.onclick=function(){
-    navBar=document.querySelector("#navMenu");
+    let navBar=document.querySelector("#navMenu");
     navBar.classList.toggle("active");
 };
