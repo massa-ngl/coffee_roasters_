@@ -492,10 +492,15 @@ img {
     z-index: 200;
   }
 
-  .nav__section-menu.active{
+  .nav__section-menu.active {
     height: 450px;
-    background: #11101b;
+    background: linear-gradient(
+      180deg,
+      var(--bg-light-cream-color) 30%,
+      #d8d8d8ec 70%
+      );
     z-index: 1000;
+    color: var(--dark-grey-blue-color);
   }
 
   .nav__section-menu.active ul {
