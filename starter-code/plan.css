@@ -285,6 +285,27 @@ img {
   width: 100%;
 }
 
+/* .create__sec-nav{} */
+
+.question{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-transform: capitalize;
+  font-family: var(--heading3-font);
+  font-size: 1.2rem;
+}
+
+.question-number{
+  color: #a1a1a1;
+  /* color: var(--dark-cyan-color); */
+}
+
+.question-text{
+  color: var(--grey-color);
+  /* color: var(--dark-grey-blue-color); */
+}
+
 /* FOOTER SECTION */
 .footer__section {
   background-color: var(--dark-grey-blue-color);
