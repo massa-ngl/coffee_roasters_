@@ -143,7 +143,318 @@
   <!-- CREATE SECTION -->
   <section class="create">
     <div class="container create__sec">
-      <form action="#" method="post"></form>
+      <!-- <form action="#" method="post"></form> -->
+
+      <div class="create__sec-nav">
+        <nav class="create__nav-question">
+
+          <a href="#preferences" class="question" tabindex="0">
+            <h3 class="question-number">01</h3>
+            <h3 class="question-text">Preferences</h3>
+          </a>
+
+          <a href="#bean-type" class="question" tabindex="1">
+            <h3 class="question-number">02</h3>
+            <h3 class="question-text">Bean type</h3>
+          </a>
+          
+          <a href="#quantity" class="question" tabindex="2">
+            <h3 class="question-number">03</h3>
+            <h3 class="question-text">Quantity</h3>
+          </a>
+          
+          <a href="#grind-option" class="question" tabindex="3">
+            <h3 class="question-number">04</h3>
+            <h3 class="question-text">Grind option</h3>
+          </a>
+          
+          <a href="#deliveries" class="question" tabindex="4">
+            <h3 class="question-number">05</h3>
+            <h3 class="question-text">Deliveries</h3>
+          </a>
+          
+        </nav>
+
+        <div class="create__nav-content">
+
+          <!-- preferences -->
+          <div id="preferences">
+            <div class="content__arrow">
+
+              <h3 class="content__arrow-h6">How do you drink your coffee?</h3>
+              
+              <svg
+                class="green-arrow"
+                width="19"
+                height="13"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
+                  fill="#0E8784"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </div>
+            
+            <div class="options">
+              <form>
+                <label for="option">
+                  <input type="radio" name="capsule" id="preferences" value="Capsule">
+                  <h3 class="options__text">Capsule</h3>
+                  <p class="options__para">Compatible with Nespresso systems and similar brewers</p>
+                </label>
+              </form>
+            </div>
+
+            <div class="options">
+                <form>
+                  <label for="option">
+                    <input type="radio" name="filter" id="preferences" value="Filter">
+                    <h3 class="options__text">Filter</h3>
+                    <p class="options__para">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                  </label>
+                </form>
+            </div>
+
+            <div class="options">
+              <form>
+                <label for="option">
+                  <input type="radio" name="espresso" id="preferences" value="Espresso">
+                  <h3 class="options__text">Espresso</h3>
+                  <p class="options__para">Dense and finely ground beans for an intense, flavorful experience</p>
+                </label>
+              </form>
+            </div>
+          </div>
+
+          <!-- bean-type -->
+          <div id="bean-type">
+            <div class="content__arrow">
+
+              <h3 class="content__arrow-h6">What type of coffee?</h3>
+              
+              <svg
+                class="green-arrow"
+                width="19"
+                height="13"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
+                  fill="#0E8784"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </div>
+            
+            <div class="options">
+              <form>
+                <label for="option">
+                  <input type="radio" name="single-origin" id="bean-type" value="Single-Origin">
+                  <h3 class="options__text">Single Origin</h3>
+                  <p class="options__para">Distinct, high quality coffee from a specific family-owned farm</p>
+                </label>
+              </form>
+            </div>
+
+            <div class="options">
+                <form>
+                  <label for="option">
+                    <input type="radio" name="decaf" id="bean-type" value="Decaf">
+                    <h3 class="options__text">Decaf</h3>
+                    <p class="options__para">Just like regular coffee, except the caffeine has been removed</p>
+                  </label>
+                </form>
+            </div>
+
+            <div class="options">
+              <form>
+                <label for="option">
+                  <input type="radio" name="blended" id="bean-type" value="Blended">
+                  <h3 class="options__text">Blended</h3>
+                  <p class="options__para">Combination of two or three dark roasted beans of organic coffees</p>
+                </label>
+              </form>
+            </div>
+          </div>
+
+          <!-- quantity -->
+          <div id="quantity">
+            <div class="content__arrow">
+
+              <h3 class="content__arrow-h6">How much would you like?</h3>
+              
+              <svg
+                class="green-arrow"
+                width="19"
+                height="13"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
+                  fill="#0E8784"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </div>
+            
+            <div class="options">
+              <form>
+                <label for="option">
+                  <input type="radio" name="small" id="quantity" value="Small">
+                  <h3 class="options__text">250g</h3>
+                  <p class="options__para">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                </label>
+              </form>
+            </div>
+
+            <div class="options">
+                <form>
+                  <label for="option">
+                    <input type="radio" name="medium" id="quantity" value="Medium">
+                    <h3 class="options__text">500g</h3>
+                    <p class="options__para">Perfect option for a couple. Yields about 40 delectable cups.</p>
+                  </label>
+                </form>
+            </div>
+
+            <div class="options">
+              <form>
+                <label for="option">
+                  <input type="radio" name="large" id="quantity" value="Large">
+                  <h3 class="options__text">1000g</h3>
+                  <p class="options__para">Perfect for offices and events. Yields about 90 delightful cups.</p>
+                </label>
+              </form>
+            </div>
+          </div>
+
+          <!-- grid-option -->
+          <div id="grind-option">
+            <div class="content__arrow">
+
+              <h3 class="content__arrow-h6">Want us to grind them?</h3>
+              
+              <svg
+                class="green-arrow"
+                width="19"
+                height="13"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
+                  fill="#0E8784"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </div>
+            
+            <div class="options">
+              <form>
+                <label for="option">
+                  <input type="radio" name="whole-bean" id="grind-option" value="Whole-Bean">
+                  <h3 class="options__text">Whole Bean</h3>
+                  <p class="options__para">Best choice if you cherish the full sensory experience</p>
+                </label>
+              </form>
+            </div>
+
+            <div class="options">
+                <form>
+                  <label for="option">
+                    <input type="radio" name="filter-two" id="grind-option" value="Filter">
+                    <h3 class="options__text">Filter</h3>
+                    <p class="options__para">For drip or pour-over coffee methods such as V60 or Aeropress</p>
+                  </label>
+                </form>
+            </div>
+
+            <div class="options">
+              <form>
+                <label for="option">
+                  <input type="radio" name="cafetiére" id="grind-option" value="Cafetiére">
+                  <h3 class="options__text">Cafetiére</h3>
+                  <p class="options__para">Course ground beans specially suited for french press coffee</p>
+                </label>
+              </form>
+            </div>
+          </div>
+
+          <!-- deliveries -->
+          <div id="deliveries">
+            <div class="content__arrow">
+
+              <h3 class="content__arrow-h6">How much would you like?</h3>
+              
+              <svg
+                class="green-arrow"
+                width="19"
+                height="13"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
+                  fill="#0E8784"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </div>
+            
+            <div class="options">
+              <form>
+                <label for="option">
+                  <input type="radio" name="week" id="deliveries" value="Week">
+                  <h3 class="options__text">Every week</h3>
+                  <p class="options__para">$14.00 per shipment. Includes free first-class shipping.</p>
+                </label>
+              </form>
+            </div>
+
+            <div class="options">
+                <form>
+                  <label for="option">
+                    <input type="radio" name="weeks" id="deliveries" value="Weeks">
+                    <h3 class="options__text">Every 2 weeks</h3>
+                    <p class="options__para">$17.25 per shipment. Includes free priority shipping.</p>
+                  </label>
+                </form>
+            </div>
+
+            <div class="options">
+              <form>
+                <label for="option">
+                  <input type="radio" name="month" id="deliveries" value="Month">
+                  <h3 class="options__text">Every month</h3>
+                  <p class="options__para">$22.50 per shipment. Includes free priority shipping.</p>
+                </label>
+              </form>
+            </div>
+          </div>
+
+          <!-- order-summary -->
+          <div class="order__summary">
+
+            <!-- order-summary-maze -->
+            <div class="order__summary-maze">
+              <p class="order__summary-header">Order Summary</p>
+              <p class="order__summary-content">
+                “I drink coffee _____, with a _____ type of bean. _____ ground ala _____, 
+                sent to me _____.”
+              </p>
+            </div>
+            
+            <!-- order-summary-link -->
+            <div class="order__summer__link">
+              <a id="submit-button" class="cta__btn1">Create my plan!</a>
+            </div>
+
+          </div>
+
+            
+        </div>
+      </div>
+
     </div>
   </section>
 
