@@ -285,7 +285,12 @@ img {
   width: 100%;
 }
 
-/* .create__sec-nav{} */
+.create__sec-nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 2px solid purple;
+}
 
 .question{
   display: flex;
@@ -304,6 +309,12 @@ img {
 .question-text{
   color: var(--grey-color);
   /* color: var(--dark-grey-blue-color); */
+}
+
+.content__arrow{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* FOOTER SECTION */
