@@ -426,7 +426,7 @@ label:has([type="radio"]:checked) p {
 }
 
 .accordion:after {
-  content: "\002B";
+  content: url("/starter-code/assets/plan/desktop/icon-arrow.svg");
   color: #777;
   font-weight: bold;
   float: right;
@@ -434,7 +434,8 @@ label:has([type="radio"]:checked) p {
 }
 
 .active:after {
-  content: "\2212";
+  content: url("/starter-code/assets/plan/desktop/icon-arrow-down.svg");
+
 }
 
 .panel {
