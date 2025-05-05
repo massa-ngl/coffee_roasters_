@@ -177,232 +177,143 @@
 
         <div class="create__nav-content">
 
-          <!-- preferences -->
           <div id="preferences">
-            <div class="content__arrow">
-
-              <h3 class="content__arrow-h6">How do you drink your coffee?</h3>
-              
-              <svg
-                class="green-arrow"
-                width="19"
-                height="13"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
-                  fill="#0E8784"
-                  fill-rule="nonzero"
-                />
-              </svg>
-            </div>
-            
-            <div class="options">
+            <button class="accordion">How do you drink your coffee?</button>
+            <div class="panel">
               <form>
-                <label for="option">
-                  <input type="radio" name="capsule" id="preferences" value="Capsule">
+                <label for="pref__capsule">
+                  <input type="radio" name="capsule" id="pref__capsule" value="Capsule">
                   <h3 class="options__text">Capsule</h3>
                   <p class="options__para">Compatible with Nespresso systems and similar brewers</p>
                 </label>
-
-                <label for="option">
-                  <input type="radio" name="filter" id="preferences" value="Filter">
+      
+                <label for="pref__filter">
+                  <input type="radio" name="filter" id="pref__filter" value="Filter">
                   <h3 class="options__text">Filter</h3>
                   <p class="options__para">For pour over or drip methods like Aeropress, Chemex, and V60</p>
                 </label>
                 
-                <label for="option">
-                  <input type="radio" name="espresso" id="preferences" value="Espresso">
+                <label for="pref__expresso">
+                  <input type="radio" name="espresso" id="pref__expresso" value="Espresso">
                   <h3 class="options__text">Espresso</h3>
                   <p class="options__para">Dense and dinely ground beans for an intense, flavorful experience</p>
                 </label>
-              </form>
+              </form>        
             </div>
           </div>
-
-          <!-- bean-type -->
+    
           <div id="bean-type">
-            <div class="content__arrow">
-
-              <h3 class="content__arrow-h6">What type of coffee?</h3>
-              
-              <svg
-                class="green-arrow"
-                width="19"
-                height="13"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
-                  fill="#0E8784"
-                  fill-rule="nonzero"
-                />
-              </svg>
-            </div>
-            
-            <div class="options">
+            <button class="accordion">What type of coffee?</button>
+            <div class="panel">
               <form>
-
-                <label for="option">
-                  <input type="radio" name="single-origin" id="bean-type" value="Single-Origin">
+                <label for="pref__single">
+                  <input type="radio" name="single-origin" id="pref__single" value="Single-Origin">
                   <h3 class="options__text">Single Origin</h3>
                   <p class="options__para">Distinct, high quality coffee from a specific family-owned farm</p>
                 </label>
-
-                <label for="option">
-                  <input type="radio" name="decaf" id="bean-type" value="Decaf">
+      
+                <label for="pref__decaf">
+                  <input type="radio" name="decaf" id="pref__decaf" value="Decaf">
                   <h3 class="options__text">Decaf</h3>
                   <p class="options__para">Just like regular coffee, except the caffeine has been removed</p>
                 </label>
-
-                <label for="option">
-                  <input type="radio" name="blended" id="bean-type" value="Blended">
+      
+                <label for="pref__blended">
+                  <input type="radio" name="blended" id="pref__blended" value="Blended">
                   <h3 class="options__text">Blended</h3>
                   <p class="options__para">Combination of two or three dark roasted beans of organic coffees</p>
                 </label>
-
-              </form>
+              </form> 
             </div>
           </div>
-
-          <!-- quantity -->
-          <div id="quantity">
-            <div class="content__arrow">
-
-              <h3 class="content__arrow-h6">How much would you like?</h3>
-              
-              <svg
-                class="green-arrow"
-                width="19"
-                height="13"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
-                  fill="#0E8784"
-                  fill-rule="nonzero"
-                />
-              </svg>
-            </div>
-            
-            <div class="options">
+    
+          <div id="quality">
+            <button class="accordion">How much would you like?</button>
+            <div class="panel">
               <form>
-                <label for="option">
-                  <input type="radio" name="small" id="quantity" value="Small">
+                <label for="pref__small">
+                  <input type="radio" name="small" id="pref__small" value="Small">
                   <h3 class="options__text">250g</h3>
                   <p class="options__para">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
                 </label>
                 
-                <label for="option">
-                  <input type="radio" name="large" id="quantity" value="Large">
+                <label for="pref__large">
+                  <input type="radio" name="large" id="pref__large" value="Large">
                   <h3 class="options__text">1000g</h3>
                   <p class="options__para">Perfect for offices and events. Yields about 90 delightful cups.</p>
                 </label>
-
-                <label for="option">
-                  <input type="radio" name="medium" id="quantity" value="Medium">
+      
+                <label for="pref__medium">
+                  <input type="radio" name="medium" id="pref__medium" value="Medium">
                   <h3 class="options__text">500g</h3>
                   <p class="options__para">Perfect option for a couple. Yields about 40 delectable cups.</p>
                 </label>
-              </form>
+              </form>  
             </div>
           </div>
-
-          <!-- grid-option -->
+    
           <div id="grind-option">
-            <div class="content__arrow">
-
-              <h3 class="content__arrow-h6">Want us to grind them?</h3>
-              
-              <svg
-                class="green-arrow"
-                width="19"
-                height="13"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
-                  fill="#0E8784"
-                  fill-rule="nonzero"
-                />
-              </svg>
-            </div>
-            
-            <div class="options">
+            <button class="accordion">Want us to grind them?</button>
+            <div class="panel">
               <form>
-                <label for="option">
-                  <input type="radio" name="whole-bean" id="grind-option" value="Whole-Bean">
+                <label for="pref__whole">
+                  <input type="radio" name="whole-bean" id="pref__whole" value="Whole-Bean">
                   <h3 class="options__text">Whole Bean</h3>
                   <p class="options__para">Best choice if you cherish the full sensory experience</p>
                 </label>
-
-                <label for="option">
-                  <input type="radio" name="filter-two" id="grind-option" value="Filter">
+      
+                <label for="pref__filter2">
+                  <input type="radio" name="filter-two" id="pref__filter2" value="Filter">
                   <h3 class="options__text">Filter</h3>
                   <p class="options__para">For drip or pour-over coffee methods such as V60 or Aeropress</p>
                 </label>
-
-                <label for="option">
-                  <input type="radio" name="cafetiére" id="grind-option" value="Cafetiére">
+      
+                <label for="pref__cafe">
+                  <input type="radio" name="cafetiére" id="pref__cafe" value="Cafetiére">
                   <h3 class="options__text">Cafetiére</h3>
                   <p class="options__para">Course ground beans specially suited for french press coffee</p>
                 </label>
-              </form>
+              </form>  
             </div>
           </div>
-
-          <!-- deliveries -->
+    
           <div id="deliveries">
-            <div class="content__arrow">
-
-              <h3 class="content__arrow-h6">How much would you like?</h3>
-              
-              <svg
-                class="green-arrow"
-                width="19"
-                height="13"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15.949.586l2.828 2.828-9.096 9.096L.586 3.414 3.414.586l6.267 6.267z"
-                  fill="#0E8784"
-                  fill-rule="nonzero"
-                />
-              </svg>
-            </div>
-            
-            <div class="options">
+            <button class="accordion">How often should we deliver?</button>
+            <div class="panel">
               <form>
-                <label for="option">
-                  <input type="radio" name="week" id="deliveries" value="Week">
+                <label for="pref__week">
+                  <input type="radio" name="week" id="pref__week" value="Week">
                   <h3 class="options__text">Every week</h3>
                   <p class="options__para">$14.00 per shipment. Includes free first-class shipping.</p>
                 </label>
-
-                <label for="option">
-                  <input type="radio" name="weeks" id="deliveries" value="Weeks">
+      
+                <label for="pref__weeks">
+                  <input type="radio" name="weeks" id="pref__weeks" value="Weeks">
                   <h3 class="options__text">Every 2 weeks</h3>
                   <p class="options__para">$17.25 per shipment. Includes free priority shipping.</p>
                 </label>
-
-                <label for="option">
-                  <input type="radio" name="month" id="deliveries" value="Month">
+      
+                <label for="pref__month">
+                  <input type="radio" name="month" id="pref__month" value="Month">
                   <h3 class="options__text">Every month</h3>
                   <p class="options__para">$22.50 per shipment. Includes free priority shipping.</p>
                 </label>
-              </form>
+              </form>  
             </div>
           </div>
 
+          <div class="space"></div>
+    
           <!-- order-summary -->
           <div class="order__summary">
-
+    
             <!-- order-summary-maze -->
             <div class="order__summary-maze">
-              <p class="order__summary-header">Order Summary</p>
+              <p class="order__summary-header">ORDER SUMMARY</p>
               <p class="order__summary-content">
-                “I drink coffee as _____, with a _____ type of bean. _____ ground ala _____, 
-                sent to me _____.”
+                “I drink my coffee using <span class="fill__green">_____</span>, 
+                with a <span class="fill__green">_____</span> 
+                type of bean. <span class="fill__green">_____</span> sent to me <span class="fill__green">_____</span>.”
               </p>
             </div>
             
@@ -410,33 +321,13 @@
             <div class="order__summer__link">
               <a id="submit-button" class="cta__btn1">Create my plan!</a>
             </div>
-
+    
           </div>
             
         </div>
 
       </div>
 
-    </div>
-  </section>
-
-  <!-- test section -->
-  <section class="test__section">
-    <div class="container test">
-      <button class="accordion">Section 1</button>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <button class="accordion">Section 2</button>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <button class="accordion">Section 3</button>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
     </div>
   </section>
 
