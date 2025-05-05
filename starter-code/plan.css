@@ -281,43 +281,15 @@ img {
 
 /* CREATE SECTION */
 .create__sec {
-  /* border: 2px solid blue; */
   padding: 0px 50px;
   width: 100%;
 }
 
-.create__sec-nav {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  /* border: 2px solid purple; */
+.create__sec-nav{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 80px;
 }
-
-/* .question{
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  justify-content: space-between;
-  text-transform: capitalize;
-  font-family: var(--heading3-font);
-  font-size: 1.2rem;
-}
-
-.question-number{
-  color: #a1a1a1;
-  border: 2px solid var(--dark-cyan-color);
-}
-
-.question-text{
-  color: var(--grey-color);
-  text-align: center;
-}
-
-.question{
-  display: flex;
-  text-align: left;
-  justify-content: space-between;
-} */
 
 .question {
   display: flex;
@@ -356,8 +328,8 @@ img {
 }
 
 .options__text {
-  max-width: 15rem;
   text-align: left;
+  margin-bottom: 14px;
 }
 
 .options {
@@ -373,7 +345,7 @@ img {
 .option {
   align-items: start;
   padding: 2rem;
-  background-color: #f4f4f4;
+  background-color: var(--bg-light-cream-color);
   border-radius: 10px;
   width: 100%;
   z-index: 2;
@@ -389,27 +361,34 @@ input[type="radio"] {
 }
 
 label {
-  transition: 0.4s;
+  transition: 0.8s;
 }
 
 label:hover {
   cursor: pointer;
-  background: #fdd6ba;
+  background: var(--pale-orange-color);
 }
 
 label:has([type="radio"]:checked) {
-  background-color: #0e8784;
+  background-color: var(--dark-cyan-color);
+}
+
+label:has([type="radio"]:checked):hover{
+  background-color: var(--dark-cyan-color);
 }
 
 label:has([type="radio"]:checked) h3,
 label:has([type="radio"]:checked) p {
-  color: white;
+  color: var(--bg-light-cream-color);
 }
 
-/* test section */
+.test{
+  width: 100%;
+  border: 2px solid red;
+  padding: 0;
+}
+
 .accordion {
-  background-color: #eee;
-  color: #444;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -418,16 +397,22 @@ label:has([type="radio"]:checked) p {
   outline: none;
   font-size: 15px;
   transition: 0.4s;
+  line-height: var(--heading1-lineHeight);
+  font-size: var(--heading2-fontSize);
+  color: var(--grey-color);
+  font-family: var(--heading4-font);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.active,
-.accordion:hover {
-  background-color: #ccc;
+.active {
+  background-color: var(--bg-light-cream-color);
 }
 
 .accordion:after {
   content: url("/starter-code/assets/plan/desktop/icon-arrow.svg");
-  color: #777;
+  color: var(--grey-color);
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -435,16 +420,82 @@ label:has([type="radio"]:checked) p {
 
 .active:after {
   content: url("/starter-code/assets/plan/desktop/icon-arrow-down.svg");
-
 }
 
 .panel {
-  padding: 0 18px;
-  background-color: white;
+  padding: 0;
+  /* background-color: white; */
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
+.panel form{
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: left;
+  gap: 20px;
+}
+
+.panel label{
+  border: 2px solid transparent;
+  padding: 2.2rem 1.5rem 5rem 1.5rem;
+  background-color: #f4f4f4cb;
+  border-radius: 12px;
+  transition: background-color 1s ease;
+}
+
+.panel label:hover{
+  background-color: var(--pale-orange-color);
+}
+
+.space{
+  padding: 4rem;
+}
+
+.order__summary{
+  background-color: var(--dark-grey-blue-color);
+  padding: 3rem;
+  border-radius: 12px;
+}
+
+.order__summary-header{
+  color: var(--grey-color);
+  margin-bottom: 1rem;
+}
+
+.order__summary-content{
+  color: var(--bg-light-cream-color);
+  font-family: var(--heading1-font);
+  font-size: var(--heading4-fontSize);
+  margin-bottom: 1rem;
+}
+
+.fill__green{
+  color: var(--dark-cyan-color);
+}
+
+.order__summer__link{
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: end;
+}
+
+.cta__btn1{
+  background-color: var(--dark-cyan-color);
+  padding: 10px 28px;
+  border-radius: 10px;
+  color: var(--bg-light-cream-color);
+  cursor: pointer;
+  transition: background-color 1s ease;
+  font-family: var(--heading4-font);
+}
+
+.cta__btn1:hover{
+  background-color: var(--dark-cyan-hover-color);
+}
+
 
 /* FOOTER SECTION */
 .footer__section {
