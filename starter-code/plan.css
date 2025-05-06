@@ -422,6 +422,10 @@ label:has([type="radio"]:checked) p {
   content: url("/starter-code/assets/plan/desktop/icon-arrow-down.svg");
 }
 
+.nav__section-menu.active ~ .header .header-arrow {
+  display: none;
+}
+
 .panel {
   padding: 0;
   /* background-color: white; */
@@ -451,13 +455,14 @@ label:has([type="radio"]:checked) p {
 }
 
 .space{
-  padding: 4rem;
+  padding: 2rem;
 }
 
-.order__summary{
+.order__summary-maze{
   background-color: var(--dark-grey-blue-color);
   padding: 3rem;
   border-radius: 12px;
+  margin-bottom: 3rem;
 }
 
 .order__summary-header{
@@ -484,7 +489,7 @@ label:has([type="radio"]:checked) p {
 
 .cta__btn1{
   background-color: var(--dark-cyan-color);
-  padding: 10px 28px;
+  padding: 12px 30px;
   border-radius: 10px;
   color: var(--bg-light-cream-color);
   cursor: pointer;
@@ -588,6 +593,27 @@ label:has([type="radio"]:checked) p {
     margin: 8rem auto;
   }
 
+  /* create section */
+  .create__sec{
+    /* border: 2px solid red; */
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .create__sec-nav{
+    /* border: 2px solid green; */
+    display: flex;
+  }
+
+  .create__nav-question{
+    display: none;
+  }
+
+  .order__summer__link{
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
   /* footer section */
   .footer__section {
     display: grid;
@@ -641,24 +667,6 @@ label:has([type="radio"]:checked) p {
   }
 
   .nav__section-menu.active {
-    /* z-index: 1;
-    height: 100%;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    position: fixed;
-    background: -webkit-linear-gradient(
-      270deg,
-      rgba(254, 252, 247, 1) 45%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    padding-top: 8rem;
-    gap: 2rem;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s; */
     height: 450px;
     background: linear-gradient(
       180deg,
@@ -724,6 +732,7 @@ label:has([type="radio"]:checked) p {
     flex-direction: column;
     text-align: center;
   }
+  
   .cta__btn-link {
     display: flex;
     justify-content: center;
@@ -735,8 +744,34 @@ label:has([type="radio"]:checked) p {
   }
 
   /* create section */
-  .create__sec-nav {
+  .create__sec{
+    /* border: 2px solid red; */
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .create__sec-nav{
+    /* border: 2px solid green; */
     display: flex;
+  }
+
+  .create__nav-question{
+    display: none;
+  }
+
+  .order__summer__link{
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  .panel form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .panel label{
+    padding: 1.6rem;
   }
 
   /* footer section */
