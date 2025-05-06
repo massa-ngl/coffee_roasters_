@@ -1,21 +1,25 @@
-let menuButton=document.querySelector("#menuIcon");
+document.addEventListener("DOMContentLoaded", () => {
+  const menuButton = document.querySelector("#menuIcon");
+  const navBar = document.querySelector("#navMenu");
 
-menuButton.onclick=function(){
-    let navBar=document.querySelector("#navMenu");
-    navBar.classList.toggle("active");
-};
+  if (menuButton && navBar) {
+    menuButton.addEventListener("click", () => {
+      navBar.classList.toggle("active");
+    });
+  }
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+  const accordions = document.querySelectorAll(".accordion");
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+  accordions.forEach(acc => {
+    acc.addEventListener("click", () => {
+      acc.classList.toggle("active");
+      const panel = acc.nextElementSibling;
+
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
   });
-}
+});
