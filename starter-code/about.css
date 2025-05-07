@@ -242,33 +242,63 @@ img {
 
 /* QUALITY SECTION */
 .quality__sec{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 100%;
-  padding: 8rem 0 0 0;
-  /* margin-bottom: 6rem; */
+  padding: 5rem 0 0 0;
+  position: relative;
+  overflow: hidden;
+  height: 30rem;
+  margin-bottom: 2rem;
 }
 
 .quality__sec-content{
   display: flex;
   gap: 120px;
   width: 86%;
+  /* max-width: 1200px;  */
   margin: 0 auto;
   padding: 8rem 0 0 0;
   z-index: 3;
   position: relative;
-  /* top: 50%; */
-  transform: translateY(-140%);
-  border: 2px solid green;
+  transform: translateY(-105%);
+  /* border: 2px solid green; */
+}
+
+.quality__text{
+  display: grid;
+  justify-content: end;
+}
+
+.quality__text {
+  flex: 1;
+}
+
+.quality__sec-content picture {
+  flex: 1;
+}
+
+.quality-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 .quality__text-h3{
   color: var(--bg-light-cream-color);
   font-family: var(--heading4-font);
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  /* color: black; */
+  display: flex;
+  align-items: end;
+  /* border: 2px solid red; */
 }
 
 .quality__sec-para{
+  /* border: 2px solid green; */
+  display: flex;
+  align-items: center;
   color: #bbbbbb;
 }
 
@@ -425,9 +455,28 @@ img {
   }
 
   /* quality section */
+  .quality__sec{
+    padding-top: 8rem;
+    height: 48rem;
+  }
+
   .quality__sec-content{
     display: flex;
     flex-direction: column-reverse;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    transform: translateY(-115%);
+    gap: 40px;
+  }
+
+  .quality-img{
+    border-radius: 8px;
+  }
+
+  .quality__text-h3{
+    font-size: 1.9rem;
+    /* color: rebeccapurple; */
   }
 
   /* headquarters section */
@@ -555,9 +604,28 @@ img {
   }
 
   /* quality section */
+  .quality__sec{
+    padding-top: 8rem;
+    height: 42rem;
+  }
+
   .quality__sec-content{
     display: flex;
     flex-direction: column-reverse;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    transform: translateY(-115%);
+    gap: 40px;
+  }
+
+  .quality-img{
+    border-radius: 8px;
+  }
+
+  .quality__text-h3{
+    font-size: 1.9rem;
+    /* color: rebeccapurple; */
   }
 
   /* headquarters section */
